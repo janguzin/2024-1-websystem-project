@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Yum-QUEST! - 화수목</title>
+    <title>Yum-QUEST! - 내리뷰확인하기</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,52 +16,22 @@
         background-color: #ff4500;
       }
       .btn-custom {
-        background-color: #ff4500;
-        border-color: #ff4500;
-        color: white;
-      }
-      .card {
-        margin-top: 20px;
-        border: none;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      .card img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        width: 100%; /* 이미지 너비를 카드 너비에 맞춤 */
-        height: auto; /* 이미지 비율 유지 */
-        max-height: 200px; /* 이미지 최대 높이를 설정하여 절반 크기로 줄임 */
-        object-fit: cover;
-      }
-      .card-body {
-        padding: 20px;
-      }
-      .rating {
-        font-size: 1.5rem;
-        color: #ff4500;
-      }
-      .review-button {
-        background-color: #ff4500;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
+        background-color: #f0ad4e;
+        border-color: #f0ad4e;
       }
       .header, .navbar {
         background-color: #ff4500;
         color: white;
         padding: 10px 0;
       }
-      .header .container {
+      .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
       .header .navbar-brand {
-        font-size: 2rem; /* 헤더의 글씨 크기를 크게 설정 */
-        margin: 0 auto; /* 가운데 정렬 */
+        font-size: 2rem;
+        margin: 0 auto;
       }
       .navbar .container {
         display: flex;
@@ -74,28 +44,51 @@
         color: white !important;
         margin-right: 10px;
       }
-      .image-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
+      .login-button {
+        position: absolute;
+        right: 10px;
       }
-      .image-container img {
-        flex: 1;
-        max-height: 200px; /* 이미지 최대 높이를 설정 */
-        object-fit: cover;
+      .main-content {
+        width: 60%;
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
         border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      .review-title {
+        font-size: 1.5rem;
+        color: #ff4500;
+        margin-bottom: 10px;
+      }
+      .review-rating {
+        font-size: 1.2rem;
+        color: #ff4500;
+        margin-bottom: 10px;
+      }
+      .review-content {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+      .review-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
       }
     </style>
   </head>
   <body>
     
 <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <a href="#" class="navbar-brand text-white">
       <strong>Yum-QUEST!</strong>
     </a>
-    <button class="btn btn-sm btn-outline-light">로그인</button>
+    <button class="btn btn-sm btn-outline-light login-button">로그인</button>
   </div>
 </header>
 
@@ -104,27 +97,22 @@
     <div class="d-flex justify-content-center w-100">
       <a href="#" class="btn btn-sm btn-outline-light me-2">지도바로가기</a>
       <a href="#" class="btn btn-sm btn-outline-light me-2">내리뷰확인하기</a>
-      <a href="#" class="btn btn-sm btn-outline-light">리뷰작성하기</a>
+      <a href="#" class="btn btn-sm btn-outline-light">리뷰구경하기</a>
     </div>
   </div>
 </nav>
 
 <main class="container">
-  <div class="card">
-    <div class="image-container">
-      <img src="화수목.jpeg" alt="화수목">
-      <img src="샤브샤브.jpeg" alt="샤브샤브">
+  <div class="main-content">
+    <h2 class="review-title">화수목</h2>
+    <div class="review-rating">4.9</div>
+    <div class="review-content">
+      샤브샤브의 정석입니다. 채소 정말 신선하고, 재료들 좋은 게 느껴져요!<br>
+      분당 최고 샤브샤브 맛집입니다.<br>
+      부모님이나 선생님께 대접하기에도 좋은 퀄리티입니다.<br>
+      스키야키도 정말 맛있어요. 직원분들도 친절해요!
     </div>
-    <div class="card-body">
-      <h3 class="card-title">화수목</h3>
-      <h5 class="card-subtitle text-muted">분당 | 샤브샤브, 스끼야끼</h5>
-      <div class="rating mt-3">4.9</div>
-      <p class="card-text mt-3">
-        경기도 성남시 분당구 서현동 273-2<br>
-        031-703-7313
-      </p>
-      <button class="review-button" onclick="location.href='화수목리뷰보기.html'">리뷰보기</button>
-    </div>
+    <img src="화수목.jpeg" alt="화수목 이미지" class="review-image">
   </div>
 </main>
 
@@ -133,7 +121,7 @@
     <p class="float-end mb-1">
       <a href="#">Back to top</a>
     </p>
-    <p class="mb-1">Yum-QUEST! &copy; mongsil1112@naver.com</p>
+    <p class="mb-1">Yum-QUEST! &copy; eugene2065@sookmyung.ac.kr</p>
     <p class="mb-0"><a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.</p>
   </div>
 </footer>
