@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Yum-QUEST!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+      .navbar-custom {
+        background-color: #ff4500;
+      }
+      .btn-custom {
+        background-color: #f0ad4e;
+        border-color: #f0ad4e;
+      }
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .card-text {
+        font-size: 0.875rem;
+        color: #777;
+      }
+      .quest-button { 
+        background-color: #ff4500;
+        border: none;
+        color: white;
+      }
+      .card-img-top {
+        height: 155px; /* 사진 크기 설정 */
+        object-fit: cover; /* 이미지가 잘리지 않고 꽉 차도록 */
+      }
+      .header {
+        background-color: #ff4500;
+        color: white;
+        padding: 10px 0;
+      }
+      .navbar {
+        background-color: #ff4500;
+        padding: 10px 0;
+      }
+      .nav-center {
+        display: flex;
+        justify-content: center;
+      }
+      .small-text {
+        font-size: 1.25rem;
+      }
+      .header .navbar-brand {
+        font-size: 2rem; /* 헤더의 글씨 크기를 크게 설정 */
+      }
+      .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header .login-button {
+        position: absolute;
+        right: 10px;
+      }
+      .card-link {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    
+<header class="header">
+  <div class="container header-container">
+    <a href="#" class="navbar-brand text-white">
+      <strong>Yum-QUEST!</strong>
+    </a>
+    <button class="btn btn-sm btn-outline-light login-button">로그인</button>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container d-flex justify-content-center">
+    <div class="d-flex">
+      <a href="#" class="btn btn-sm btn-outline-light me-2">지도바로가기</a>
+      <a href="내리뷰.html" class="btn btn-sm btn-outline-light me-2">내리뷰확인하기</a>
+      <a href="#" class="btn btn-sm btn-outline-light">리뷰구경하기</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-2">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h1 class="fw-light small-text">분당송님의 맛있는 순간을 Yum-QUEST!에 저장하세요!</h1>
+        <div class="mt-4">
+          <a href="리뷰작성.html" class="btn btn-custom btn-lg me-2">리뷰작성하기</a>
+          <a href="myquest.html" class="btn btn-custom btn-lg">MY QUEST</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <a href="화수목.html" class="card-link">
+            <div class="card shadow-sm">
+              <img src="화수목.jpeg" class="card-img-top" alt="화수목">
+              <div class="card-body">
+                <h5 class="card-title">화수목 분당동</h5>
+                <p class="card-text">대표메뉴 | 라자냐, 보드카 마카로니</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-warning text-dark">4.9</span>
+                  </div>
+                  <button type="button" class="btn quest-button btn-sm">+ QUEST</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="하치돈부리.html" class="card-link"> <!-- 하치돈부리 링크 수정 -->
+            <div class="card shadow-sm">
+              <img src="사케동.jpeg" class="card-img-top" alt="하치로돈부리">
+              <div class="card-body">
+                <h5 class="card-title">하치로돈부리 서현동</h5>
+                <p class="card-text">대표메뉴 | 사케동, 치즈 가츠동</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-warning text-dark">4.9</span>
+                  </div>
+                  <button type="button" class="btn quest-button btn-sm">+ QUEST</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="숙성도.html" class="card-link">
+            <div class="card shadow-sm">
+              <img src="숙성도판교.jpeg" class="card-img-top" alt="숙성도">
+              <div class="card-body">
+                <h5 class="card-title">숙성도 백현동</h5>
+                <p class="card-text">대표메뉴 | 960 숙성도 생갈비, 720 흑돼지</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-warning text-dark">4.9</span>
+                  </div>
+                  <button type="button" class="btn quest-button btn-sm">+ QUEST</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="은뜸.html" class="card-link">
+            <div class="card shadow-sm">
+              <img src="은뜸.jpeg" class="card-img-top" alt="은뜸">
+              <div class="card-body">
+                <h5 class="card-title">은뜸 서현동</h5>
+                <p class="card-text">대표메뉴 | 은뜸오름초밥, 대왕 후토마끼</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-warning text-dark">4.9</span>
+                  </div>
+                  <button type="button" class="btn quest-button btn-sm">+ QUEST</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="리스카페.html" class="card-link">
+            <div class="card shadow-sm">
+              <img src="리스카페.jpeg" class="card-img-top" alt="리스카페">
+              <div class="card-body">
+                <h5 class="card-title">리스카페 정자동</h5>
+                <p class="card-text">대표메뉴 | 라자냐, 보드카 마카로니</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-warning text-dark">4.9</span>
+                  </div>
+                  <button type="button" class="btn quest-button btn-sm">+ QUEST</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="헤밍웨이.html" class="card-link">
+            <div class="card shadow-sm">
+              <img src="헤밍웨이.jpeg" class="card-img-top" alt="헤밍웨이">
+              <div class="card-body">
+                <h5 class="card-title">K헤밍웨이카페 미금역</h5>
+                <p class="card-text">대표메뉴 | 135종류의 베이커리, 하우스 샐러드</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="badge bg-warning text-dark">4.9</span>
+                  </div>
+                  <button type="button" class="btn quest-button btn-sm">+ QUEST</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- 맛집 썸네일 더 추가가능 -->
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Yum-QUEST! &copy; eugene2065@sookmyung.ac.kr</p>
+    <p class="mb-0"><a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12XZh7ZXx2C7lUD2UqCw5NkJcmYZFjnijClxB8KDldu8+60D" crossorigin="anonymous"></script>
+
+</body>
+</html>
