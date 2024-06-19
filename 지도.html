@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Yum-QUEST! - 지도바로가기</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      .navbar-custom {
+        background-color: #ff4500;
+      }
+      .btn-custom {
+        background-color: #f0ad4e;
+        border-color: #f0ad4e;
+        color: white;
+      }
+      .header, .navbar {
+        background-color: #ff4500;
+        color: white;
+        padding: 10px 0;
+      }
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header .navbar-brand {
+        font-size: 2rem;
+        margin: 0 auto;
+      }
+      .navbar .container {
+        display: flex;
+        justify-content: center;
+      }
+      .navbar-nav {
+        flex-direction: row;
+      }
+      .nav-link {
+        color: white !important;
+        margin-right: 10px;
+      }
+      .login-button {
+        position: absolute;
+        right: 10px;
+      }
+      .map-container {
+        width: 80%;
+        height: 500px;
+        margin: 30px auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    
+<header class="header">
+  <div class="container header-container">
+    <a href="#" class="navbar-brand text-white">
+      <strong>Yum-QUEST!</strong>
+    </a>
+    <button class="btn btn-sm btn-outline-light login-button" onclick="location.href='로그인.html'">로그인</button>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="d-flex justify-content-center w-100">
+      <a href="#" class="btn btn-sm btn-outline-light me-2">지도바로가기</a>
+      <a href="내리뷰.html" class="btn btn-sm btn-outline-light me-2">내리뷰확인하기</a>
+      <a href="리뷰작성.html" class="btn btn-sm btn-outline-light">리뷰구경하기</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div id="map" class="map-container"></div>
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Yum-QUEST! &copy; eugene2065@sookmyung.ac.kr</p>
+    <p class="mb-0"><a href="#">Visit the homepage</a> or read our <a href="#">getting started guide</a>.</p>
+  </div>
+</footer>
+
+<script>
+  function initMap() {
+    var mapOptions = {
+      center: { lat: 37.4979, lng: 127.0276 },
+      zoom: 15
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var markerOptions = {
+      position: { lat: 37.4979, lng: 127.0276 },
+      map: map
+    };
+
+    var marker = new google.maps.Marker(markerOptions);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12XZh7ZXx2C7lUD2UqCw5NkJcmYZFjnijClxB8KDldu8+60D" crossorigin="anonymous"></script>
+
+</body>
+</html>
